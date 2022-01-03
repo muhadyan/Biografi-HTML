@@ -5,29 +5,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biografi Adyan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Spline Sans', sans-serif;
+            background-color: #FDFAF7;
+        }
+        a:link {
+            color: white;
+        }
+        a:hover {
+            font-weight: bold;
+        }
+        a:visited {
+            color: black;
+        }
+        a:active {
+            color: blue;
+        }
+        #header {
+            display: flex;
+        }
+        #my-porto {
+            width: 700px;
+            text-align: left;
+            padding: 0px 25px 40px 25px;
+        }
+        #bio {
+            width: 700px;
+        }
+        #button-linkedin {
+            width: 150px;
+            height: 50px;
+            border-radius: 40px;
+            background-color: #bb8a5a;
+            color: white;
+            font-size: 18px;
+        }
+        #my-skills {
+            margin-bottom: 8px;
+        }
+        #bungkus-skills {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            background-color: #efefef;
+            width: 550px;
+            height: 310px;
+            padding: 30px 0 0 0;
+        }
+        img {
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 10px black;
+            transition: 0.5s;
+        }
+        img:hover {
+            width: 210px;
+        }
+        .isi-skills {
+            background-color: white; margin: 0px;
+            padding-top: 11px;
+        }
+        #isi-skills {
+            background-color: white; margin: 0px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: left;
+            border-radius: 0 10px 10px 0;
+        }
+        table {
+            margin-left: auto; margin-right: auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>My Portofolio</h1>
-    <hr>
-    <h4>Biografi</h4>
-    <p>Halo perkenalkan nama saya M Adyan Rohutomo. Saat ini saya bekerja di PT Boer Technology 
-        sebagai Vp of Business Support. Keseharian saya mengurus perihal adminnistrasi, keuangan, kepegawaian
-        dan memastikan semua hal terkait kebutuhan perusahaan serta karyawan dapet terpenuhi.</p>
-    <h4>Skills</h4>
-    <ul>
-        <li>Budgeting</li>
-        <li>Planning</li>
-        <li>Accounting</li>
-        <li>Tax</li>
-    </ul>
-    <h4>Other Skills</h4>
-    <ol>
-        <li>Python</li>
-        <li>HTML</li>
-        <li>Git</li>
-        <li>MySQL</li>
-    </ol>
-    <h4>My Employee</h4>
+    <div id="header">
+        <div id="my-porto">
+            <h1>M Adyan Rohutomo - VP of Business Support</h1>
+        </div>
+        <div>
+            <div id="bio">
+                <p>Halo perkenalkan nama saya M Adyan Rohutomo. Saat ini saya bekerja di PT Boer Technology 
+                    sebagai VP of Business Support. Keseharian saya mengurus perihal administrasi, keuangan, dan kepegawaian
+                    serta memastikan semua hal terkait kebutuhan perusahaan serta karyawan dapet terpenuhi.</p>
+            </div>
+            <div>
+                <button id="button-linkedin" type="button"><a href="https://www.linkedin.com/in/adyan-rohutomo/" target="_blank">LinkedIn</a></button>
+            </div>
+        </div>
+    </div>
+    <h3 id="my-skills">My Skills</h3>
+    <div id="bungkus-skills">
+        <div style="padding: 0 25px 0 0;">
+            <img src="/business-skills.jpg" alt="business-skills" class="img-skills">
+            <h4 class="isi-skills">Business Skills</h4>
+            <ul id="isi-skills">
+                <li>Budgeting</li>
+                <li>Planning</li>
+                <li>Accounting</li>
+                <li>Tax</li>
+            </ul>  
+        </div>
+        <div style="padding: 0 0 0 25px;">
+            <img src="/technical-skills.jpg" alt="technical-skills" class="img-skills">
+            <h4 class="isi-skills">Technical Skills</h4>
+            <ol id="isi-skills">
+                <li>Python</li>
+                <li>HTML</li>
+                <li>Git</li>
+                <li>MySQL</li>
+            </ol>
+        </div>
+    </div>
+    <h3>My Employee</h3>
     <table border="1px" cellspacing="0" cellpadding="3">
         <thead>
             <tr>
@@ -58,15 +152,15 @@
             </tr>
         </tbody>
     </table>
-    <h4>Contact Me</h4>
-    <form action="">
-        <label for="femail">Email: </label>
-        <input type="email" id="femail" name="femail"><br><br>
-        <label for="fmessage">Message: </label>
-        <input type="text" id="fmessage" name="fmessage" style="height: 50px;"><br><br>
-        <button type="submit">Send</button>
+    <h3>Contact Me</h3>
+    <form action="mailto:madyanr@gmail.com">
+        <label for="femail">Email: </label><br>
+        <input type="email" id="femail" name="femail" style="height: 25px; width: 400px;"><br><br>
+        <label for="fmessage">Message: </label><br>
+        <input type="text" id="fmessage" name="fmessage" style="height: 210px; width: 400px;"><br><br>
+        <button type="submit" style="margin-bottom: 15px; height: 40px; width: 400px; border-radius: 40px; background-color: #bb8a5a; color: white;">Send</button>
     </form>
     <hr>
-    <footer>Copyright ©2021 - All right reserves</footer>
+    <footer>Copyright ©2022 - All right reserves</footer>
 </body>
 </html>
